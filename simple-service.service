@@ -1,0 +1,11 @@
+# name: /etc/systemd/system/simple-service.service
+#
+# Install as a "static" serive by copying to /etc/systemd/service/
+#
+#   sudo cp simple-service.service /etc/systemd/system/
+#
+# NOTE: fix-up  the ExecStart path if necessary
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/mburr/devtrees/simple-service/simple-service.py
